@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ShareNote/RMI.iml" filepath="$PROJECT_DIR$/ShareNote/RMI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/RMI_ChatApp.iml" filepath="$PROJECT_DIR$/.idea/RMI_ChatApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PublicChatCommon/PublicChatCommon.iml" filepath="$PROJECT_DIR$/PublicChatCommon/PublicChatCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PublicChatServer/PublicChatServer.iml" filepath="$PROJECT_DIR$/PublicChatServer/PublicChatServer.iml" />
     </modules>
   </component>
 </project>
