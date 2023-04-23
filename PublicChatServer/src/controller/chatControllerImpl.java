@@ -11,7 +11,9 @@ public class chatControllerImpl extends UnicastRemoteObject implements ChatContr
 
     @Override
     public void sendMessage(String msg) throws RemoteException {
-
+        for (ChatObserver chatObserver :chatObserverList) {
+            chatObserver.update(msg);
+        }
     }
 
     @Override
