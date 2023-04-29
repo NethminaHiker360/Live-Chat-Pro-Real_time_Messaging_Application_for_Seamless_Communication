@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PublicChatCommon/PublicChatCommon.iml" filepath="$PROJECT_DIR$/PublicChatCommon/PublicChatCommon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PublicChatServer/PublicChatServer.iml" filepath="$PROJECT_DIR$/PublicChatServer/PublicChatServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chat Pro App.iml" filepath="$PROJECT_DIR$/Chat Pro App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatClient/ChatClient.iml" filepath="$PROJECT_DIR$/ChatClient/ChatClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatCommon/ChatCommon.iml" filepath="$PROJECT_DIR$/ChatCommon/ChatCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatServer/ChatServer.iml" filepath="$PROJECT_DIR$/ChatServer/ChatServer.iml" />
     </modules>
   </component>
 </project>
