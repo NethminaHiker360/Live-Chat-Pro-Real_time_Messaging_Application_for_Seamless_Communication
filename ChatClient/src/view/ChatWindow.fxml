@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ChatWindow">
    <children>
-      <TextArea fx:id="txtmsg" layoutX="14.0" layoutY="238.0" prefHeight="47.0" prefWidth="485.0" />
-      <Button fx:id="btnSend" layoutX="201.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="31.0" prefWidth="111.0" text="Send" />
-      <TextArea fx:id="textArea" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="485.0" />
+      <Button fx:id="btnSend" layoutX="18.0" layoutY="349.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="37.0" prefWidth="261.0" text="Send" textFill="#150eeb">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <TextArea fx:id="textArea" editable="false" layoutX="14.0" layoutY="78.0" prefHeight="186.0" prefWidth="485.0" promptText="Hello ! Welcome to Public Chat Room" />
+      <TextField fx:id="txtfield" layoutX="14.0" layoutY="293.0" onAction="#enterOnAction" prefHeight="39.0" prefWidth="485.0" promptText="Type Your Message">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="14.0" layoutY="20.0" text="Enter Your Name :-">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="156.0" layoutY="14.0" prefHeight="37.0" prefWidth="196.0" promptText="Enter Your Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnexit" layoutX="422.0" layoutY="13.0" mnemonicParsing="false" onAction="#exitbtnOnAction" prefHeight="37.0" prefWidth="77.0" text="Exit" textFill="#e13232">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClear" layoutX="343.0" layoutY="349.0" mnemonicParsing="false" onAction="#btnclearOnAction" prefHeight="37.0" prefWidth="156.0" text="Clear" textFill="#14e109">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

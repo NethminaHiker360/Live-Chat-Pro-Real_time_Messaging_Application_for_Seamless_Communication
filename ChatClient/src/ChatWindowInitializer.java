@@ -1,5 +1,3 @@
-package view;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,7 +13,8 @@ public class ChatWindowInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("ChatWindow.fxml"))));
+        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/ChatWindow.fxml"))));
+        primaryStage.centerOnScreen();
         primaryStage.show();
     }
 }

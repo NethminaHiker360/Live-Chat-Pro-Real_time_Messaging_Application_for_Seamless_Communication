@@ -7,6 +7,7 @@ import controller.ChatObserver;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 import java.net.MalformedURLException;
 import java.rmi.NotBoundException;
@@ -17,6 +18,10 @@ public class ChatWindow {
     public Button btnSend;
     public ChatObserver chatObserver;
     public TextArea textArea;
+    public TextField txtfield;
+    public TextField txtname;
+    public Button btnexit;
+    public Button btnClear;
 
     public void initialize(){
         try {
@@ -35,8 +40,8 @@ public class ChatWindow {
     public void btnSendOnAction(ActionEvent actionEvent) {
         try {
             ChatController chatcontroller=ServerConnector.getServerConnector().getChatController();
-            chatcontroller.sendMessage(txtmsg.getText());
-            txtmsg.clear();
+            chatcontroller.sendMessage(txtname.getText()+" : "+txtfield.getText());
+            txtfield.clear();
         } catch (NotBoundException e) {
             throw new RuntimeException(e);
         } catch (MalformedURLException e) {
@@ -47,6 +52,20 @@ public class ChatWindow {
     }
 
     public void setMessage(String msg) {
-        textArea.setText(msg+"\n");
+        textArea.appendText(msg+"\n");
+    }
+
+    public void enterOnAction(ActionEvent actionEvent) {
+        btnSendOnAction(actionEvent);
+    }
+
+    public void exitbtnOnAction(ActionEvent actionEvent) {
+
+    }
+
+    public void btnclearOnAction(ActionEvent actionEvent) {
+        txtfield.clear();
+        txtmsg.clear();
+        txtname.clear();
     }
 }
