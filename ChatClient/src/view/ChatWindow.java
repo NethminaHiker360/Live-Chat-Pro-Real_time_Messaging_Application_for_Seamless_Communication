@@ -60,12 +60,8 @@ public class ChatWindow {
     }
 
     public void exitbtnOnAction(ActionEvent actionEvent) {
-
     }
 
     public void btnclearOnAction(ActionEvent actionEvent) {
-        txtfield.clear();
-        txtmsg.clear();
-        txtname.clear();
     }
 }
