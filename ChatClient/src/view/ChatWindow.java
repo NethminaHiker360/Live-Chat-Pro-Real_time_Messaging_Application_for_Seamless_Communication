@@ -12,13 +12,13 @@ import java.net.MalformedURLException;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-public class ChatWindowController {
+public class ChatWindow {
     public TextArea txtmsg;
     public Button btnSend;
     public ChatObserver chatObserver;
     public TextArea textArea;
 
-    public void Initialize(){
+    public void initialize(){
         try {
             chatObserver=new ChatObserverImpl(this);
             ChatController chatController = ServerConnector.getServerConnector().getChatController();

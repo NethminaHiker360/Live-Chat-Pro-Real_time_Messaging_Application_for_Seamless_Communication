@@ -1,14 +1,14 @@
 package chatObeserverImpl;
 
 import controller.ChatObserver;
-import view.ChatWindowController;
+import view.ChatWindow;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 public class ChatObserverImpl extends UnicastRemoteObject implements ChatObserver {
-    private ChatWindowController chatWindow;
-    public ChatObserverImpl(ChatWindowController chatWindow)throws RemoteException{
+    private ChatWindow chatWindow;
+    public ChatObserverImpl(ChatWindow chatWindow)throws RemoteException{
         this.chatWindow=chatWindow;
     }
     @Override
